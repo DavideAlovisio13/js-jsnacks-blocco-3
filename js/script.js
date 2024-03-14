@@ -15,7 +15,7 @@ function getRandomInteger(min, max) {
 
 
  const arrayNumb = parseInt(prompt("Inserisci il numero di array da generare: "));
-
+const arrayGen = [];
 
 function casualArrGen(n) {
     const array = [];
@@ -23,7 +23,14 @@ function casualArrGen(n) {
       array.push(getRandomInteger(0, 10));
     }
     return array;
+}
+
+  for(let i = 0; i < arrayNumb; i++){
+    arrayGen.push(casualArrGen(10));
   }
+console.log(arrayGen)
+
+  
   
  
   
